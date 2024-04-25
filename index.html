@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+   <header>
+        <nav class="p-4 flex items-center justify-between">
+            <div class="text-black text-3xl font-extrabold font-serif">
+                <h3> Delicious Food </h3>
+            </div>
+            <div class="sm:flex items-center justify-between p-4 gap-3 hidden">
+                <select name="" id="" class=" w-20 h-10 p-2 border-[2px] border-black rounded-sm bg-transparent text-black">
+                    <option value=""> sort </option>
+                    <option value=""> High Rate </option>
+                    <option value=""> Medium Rate</option>
+                    <option value=""> Low Rate</option>
+                </select>
+                <select name="" id="" class=" w-28 h-10 p-2 border-[2px] border-black bg-transparent rounded-sm text-black">
+                    <option value=""> categories </option>
+                    <option value=""> Vegetarians </option>
+                    <option value=""> Non Vegetarians</option>
+                </select>
+                <button class="text-black border-[2px] w-24 h-10 rounded-sm border-black"> Login </button>
+                <button class="text-black border-[2px] w-24 h-10 rounded-sm border-black"> Signup </button>
+            </div>
+            <button class="text-black sm:hidden">
+                <i class="fa fa-bars"></i>
+            </button>
+        </nav>
+        <div class=" mt-10 max-w-[900px] px-10 sm:px-5 mx-auto">
+            <form action="">
+                <input type="text" list="foodcourse" placeholder=" Search food" class=" rounded-sm sm:w-full w-[70%] border-[1px] border-black sm:mx-auto mx-12">
+                <datalist id="foodcourse">
+                    <option value="Pizza"> pizza </option>
+                    <option value="Burger">Burger</option>
+                    <option value="North Indian "> North Indian </option>
+                    <option value="South Indian "> South Indian </option>
+                    <option value="Manchurian"> Manchurian </option>
+                    <option value="Maggi"> Maggi </option>
+                    <option value="Chilli Patato "> Chilli Patato </option>
+                    <option value=" Sandwich "> Sandwich  </option>
+                    <option value="Noodles "> Noodles </option>
+                    <option value="Icecream">Icecream</option>
+                </datalist>
+            </form>
+        </div>
+   </header>
+   <!--  content  -->
+   <section class=" w-[100%] py-6 px-[50px] sm:px-[50px]">
+        <div>
+            <h2 class=" sm:text-3xl text-center text-black py-7 font-bold text-2xl ">  What's on your mind?
+            </h2>
+        </div>
+        <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-7 py-5">
+            <div class="text-center shadow-lg px-5">
+                <div class="overflow-hidden">
+                    <img src="image/fastfood.jpeg" alt=""class=" hover:scale-150 duration-500 object-contain h-48 w-full">
+                </div>
+                <h5 class=" text-black text-xl py-12 font-bold"> Fast Food </h5>
+            </div>
+            <div class="text-center shadow-lg px-5">
+                <div class="overflow-hidden">
+                    <img src="image/dish.jpeg" alt=""class=" hover:scale-150 duration-500 object-contain h-48 w-full">
+                </div>
+                <h5 class=" text-black text-xl py-12 font-bold"> North Indian </h5>
+            </div>
+            <div class="text-center shadow-lg px-5">
+                <div class="overflow-hidden">
+                    <img src="image/dish1.jpeg" alt=""class="hover:scale-150 duration-500 object-contain h-48 w-full">
+                </div>
+                <h5 class=" text-black text-xl py-12 font-bold"> South Indian </h5>
+            </div>
+            <div class="text-center shadow-lg px-5">
+                <div class="overflow-hidden">
+                    <img src="image/desert.jpg" alt=""class=" hover:scale-150 duration-500 object-contain h-48 w-full">
+                </div>
+                <h5 class="text-black text-xl py-12 font-bold"> Desert </h5>
+            </div>
+        </div>
+   </section>
+   <!-- offer section start -->
+   <section class=" w-[100%] py-5 px-[50px] sm:px-[50px]">
+    <div>
+        <h2 class=" sm:text-3xl text-center text-black py-7 font-bold text-2xl "> OFFER
+        </h2>
+    </div>
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-7 py-5">
+        <div class="text-center shadow-lg px-5">
+            <div class="overflow-hidden">
+                <img src="image/piza.jpg" alt=""class=" hover:scale-150 duration-500 object-contain h-48 w-full">
+            </div>
+            <h5 class=" text-black text-xl py-12 font-bold"> 30% OFF UPTO 400Rs</h5>
+        </div>
+        <div class="text-center shadow-lg px-5">
+            <div class="overflow-hidden">
+                <img src="image/burger.jpg" alt=""class=" hover:scale-150 duration-500 object-contain h-48 w-full">
+            </div>
+            <h5 class=" text-black text-xl py-12 font-bold">Buy 1 Get 2 in 100Rs </h5>
+        </div>
+        <div class="text-center shadow-lg px-5">
+            <div class="overflow-hidden">
+                <img src="image/desert1.jpeg" alt=""class="hover:scale-150 duration-500 object-contain h-48 w-full">
+            </div>
+            <h5 class=" text-black text-xl py-12 font-bold"> 10% OFF UPTO 200Rs </h5>
+        </div>
+        <div class="text-center shadow-lg px-5">
+            <div class="overflow-hidden">
+                <img src="image/frankie.jpeg" alt=""class=" hover:scale-150 duration-500 object-contain h-48 w-full">
+            </div>
+            <h5 class="text-black text-xl py-12 font-bold"> 50Rs in 2 Piece </h5>
+        </div>
+    </div>
+</section>
+<!-- top surat food start -->
+<section class=" w-[100%] py-5 px-[50px] sm:px-[50px]">
+    <div>
+        <h2 class=" sm:text-3xl text-center text-black py-7 font-bold text-2xl "> 
+            Top Surat Famous Food
+        </h2>
+    </div>
+    <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-7 py-5">
+        <div class="text-center shadow-lg px-5">
+            <div class="overflow-hidden">
+                <img src="image/fafda.jpg" alt=""class=" hover:scale-150 duration-500 object-contain h-48 w-full">
+            </div>
+            <h5 class=" text-black text-xl py-12 font-bold"> Fafda </h5>
+        </div>
+        <div class="text-center shadow-lg px-5">
+            <div class="overflow-hidden">
+                <img src="image/locha.jpg" alt=""class=" hover:scale-150 duration-500 object-contain h-48 w-full">
+            </div>
+            <h5 class=" text-black text-xl py-12 font-bold">Locho </h5>
+        </div>
+        <div class="text-center shadow-lg px-5">
+            <div class="overflow-hidden">
+                <img src="image/misal-pav.jpg" alt=""class="hover:scale-150 duration-500 object-contain h-48 w-full">
+            </div>
+            <h5 class=" text-black text-xl py-12 font-bold"> Misal Pav </h5>
+        </div>
+        <div class="text-center shadow-lg px-5">
+            <div class="overflow-hidden">
+                <img src="image/khaman.jpeg" alt=""class=" hover:scale-150 duration-500 object-contain h-48 w-full">
+            </div>
+            <h5 class="text-black text-xl py-12 font-bold"> Rasha Khaman </h5>
+        </div>
+    </div>
+</section>
+<!-- footer -->
+<footer class="w-[100%] bg-black">
+    <div class="grid sm:grid-cols-2 md:grid-cols-4 grid-cols-1 px-8 py-5 text-center">
+        <div class="text-white sm:text-3xl text-2xl font-extrabold font-serif">
+            <h2> Delicious Food </h2>
+        </div>
+        <div class="text-white">
+            <h4 class="text-2xl">Company</h4>
+            <ul class="sm:mt-4 mt-2 mx-5">
+                <li><a href="#" class="text-xl text-[gray]">About</a></li>
+            </ul>
+        </div>
+        <div class="text-white">
+            <h4 class="text-2xl">Contact us</h4>
+            <ul class="sm:mt-4 mt-2 mx-5">
+                <li><a href="#" class="text-xl text-[gray]">Help & Support</a></li>
+            </ul>
+        </div>
+        <div class="text-white">
+            <h4 class="text-2xl"> Keep Connected </h4>
+            <div class=" space-x-4">
+                <a href="#"><i class="fa-brands fa-facebook text-2xl text-blue-500 sm:mt-4 mt-2"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube text-2xl text-red-500  sm:mt-4 mt-2"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter text-2xl text-blue-500  sm:mt-4 mt-2"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin text-2xl text-blue-500  sm:mt-4 mt-2"></i></a> 
+            </div>
+        </div>
+    </div>
+    <div class="text-white text-center text-2xl py-2 px-auto">
+        <h4> Copyright © 2024 . My trip . All right reserved</h4>
+    </div>
+</footer>
+</body>
+</html>
