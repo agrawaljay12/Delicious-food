@@ -28,28 +28,53 @@
                 <button class="text-black border-[2px] w-24 h-10 rounded-sm border-black"> Login </button>
                 <button class="text-black border-[2px] w-24 h-10 rounded-sm border-black"> Signup </button>
             </div>
-            <button class="text-black sm:hidden">
+            <button class="text-black sm:hidden" onclick="handlemenu()">
                 <i class="fa fa-bars"></i>
             </button>
+            <div id="navdialog" class=" inset-0 fixed sm:hidden bg-white z-10 p-4 hidden">
+                <div class="p-4 flex items-center justify-between">
+                    <div class="text-black text-3xl font-extrabold font-serif">
+                        <h3> Delicious Food </h3>
+                    </div>
+                    <button class="text-black sm:hidden" onclick="handlemenu()">
+                        <i class="fa fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="mt-6">
+                    <select name="" id="" class=" w-20 h-10 p-2 border-[2px] border-black rounded-sm bg-transparent text-black m-3 block">
+                        <option value=""> sort </option>
+                        <option value=""> High Rate </option>
+                        <option value=""> Medium Rate</option>
+                        <option value=""> Low Rate</option>
+                    </select>
+                    <select name="" id="" class=" w-28 h-10 p-2 border-[2px] border-black bg-transparent rounded-sm text-black m-3 block ">
+                        <option value=""> categories </option>
+                        <option value=""> Vegetarians </option>
+                        <option value=""> Non Vegetarians</option>
+                    </select>
+                    <button class="text-black border-[2px] w-24 h-10 rounded-sm border-black m-3 p-3 block "> Login </button>
+                    <button class="text-black border-[2px] w-24 h-10 rounded-sm border-black m-3 p-3 block "> Signup </button>
+                </div>
+            </div>
         </nav>
-        <div class=" mt-10 max-w-[900px] px-10 sm:px-5 mx-auto">
-            <form action="">
-                <input type="text" list="foodcourse" placeholder=" Search food" class=" rounded-sm sm:w-full w-[70%] border-[1px] border-black sm:mx-auto mx-12">
-                <datalist id="foodcourse">
-                    <option value="Pizza"> pizza </option>
-                    <option value="Burger">Burger</option>
-                    <option value="North Indian "> North Indian </option>
-                    <option value="South Indian "> South Indian </option>
-                    <option value="Manchurian"> Manchurian </option>
-                    <option value="Maggi"> Maggi </option>
-                    <option value="Chilli Patato "> Chilli Patato </option>
-                    <option value=" Sandwich "> Sandwich  </option>
-                    <option value="Noodles "> Noodles </option>
-                    <option value="Icecream">Icecream</option>
-                </datalist>
-            </form>
-        </div>
    </header>
+   <div class=" mt-10 max-w-[900px] px-10 sm:px-5 mx-auto">
+    <form action="">
+        <input type="text" list="foodcourse" placeholder=" Search food" class=" rounded-sm sm:w-full w-[70%] border-[1px] border-black sm:mx-auto mx-12">
+        <datalist id="foodcourse">
+            <option value="Pizza"> pizza </option>
+            <option value="Burger">Burger</option>
+            <option value="North Indian "> North Indian </option>
+            <option value="South Indian "> South Indian </option>
+            <option value="Manchurian"> Manchurian </option>
+            <option value="Maggi"> Maggi </option>
+            <option value="Chilli Patato "> Chilli Patato </option>
+            <option value=" Sandwich "> Sandwich  </option>
+            <option value="Noodles "> Noodles </option>
+            <option value="Icecream">Icecream</option>
+        </datalist>
+    </form>
+</div>
    <!--  content  -->
    <section class=" w-[100%] py-6 px-[50px] sm:px-[50px]">
         <div>
@@ -182,5 +207,12 @@
         <h4> Copyright © 2024 . My trip . All right reserved</h4>
     </div>
 </footer>
+<script>
+    let navdialog = document.getElementById("navdialog");
+    function handlemenu()
+    {
+        navdialog.classList.toggle("hidden");
+    }
+</script>
 </body>
 </html>
